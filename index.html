@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Islamic Calendar</title>
+</head>
+<body>
+    <div class="container h-100 py-5 d-flex">
+        <div class="box m-auto w-100">
+            <h1 class="text-center">Select date to convert</h1>
+            <div class="row w-75 mx-auto p-5">
+                <div class="col-lg-3 col-md-3 p-lg-2 p-md-1 col-sm-12py-sm-1">
+                    <input id="day" type="number" class="m-auto form-control">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 p-lg-2 p-md-1 py-sm-1">
+                    <select class="mx-auto form-select" id="month">
+                        <option value="0">Jan</option>
+                        <option value="1">Feb</option>
+                        <option value="2">Mar</option>
+                        <option value="3">Apr</option>
+                        <option value="4">May</option>
+                        <option value="5">Jun</option>
+                        <option value="6">Jul</option>
+                        <option value="7">Aug</option>
+                        <option value="8">Sep</option>
+                        <option value="9">Oct</option>
+                        <option value="10">Nov</option>
+                        <option value="11">Dec</option>
+                    </select>
+                </div>
+                <div class="col-lg-3 col-md-3 p-lg-2 col-sm-12 p-md-1 p-sm-1">
+                    <input id="year" type="number" class="w-lg-50 w-md-100 m-auto form-control">
+                </div>
+            </div>
+            <div class="w-100 py-1 d-flex justify-content-center"><div class="btn btn-primary" onclick="calc()">Convert</div></div>
+            <p class="hijri-date text-center fw-bold py-5"></p>
+        </div>
+    </div>
+
+    <script src="scrtipt.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
